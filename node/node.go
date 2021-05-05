@@ -31,6 +31,11 @@ type Node struct {
 	sub event.Subscription
 }
 
+// NewWriter creates a writer for a p2p host interface
+func NewWriter(h host.Host) *internal.Writer {
+	return internal.NewWriter(h)
+}
+
 // Guarantee that we implement interfaces.
 var _ routing.PeerRouting = (*Node)(nil)
 
