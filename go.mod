@@ -1,4 +1,4 @@
-module github.com/decanus/bureka
+module github.com/ramrunner/bureka
 
 go 1.12
 
